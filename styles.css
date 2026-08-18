@@ -26,6 +26,7 @@ main { min-height: calc(100vh - 110px); display: grid; grid-template-columns: mi
 .hint { position: absolute; bottom: 18px; left: 24px; color: #8b8e86; font-size: 12px; }
 .panel { border-left: 1px solid rgba(255,255,255,.25); padding: 30px 26px; background: #171815; }
 .panel-head { display: flex; align-items: start; justify-content: space-between; margin-bottom: 42px; }
+.panel-actions { display: flex; gap: 6px; }
 .label { color: var(--lime); font-size: 11px; letter-spacing: .15em; margin: 0 0 8px; }
 h1 { margin: 0; font-size: 26px; }
 .panel label { display: block; margin: 0 0 27px; }

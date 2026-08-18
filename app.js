@@ -26,6 +26,15 @@ function update() {
 
 Object.values(controls).forEach(input => input.addEventListener('input', update));
 
+document.querySelector('#reset-button').addEventListener('click', () => {
+  controls.weight.value = 700;
+  controls.width.value = 100;
+  controls.slant.value = 0;
+  controls.size.value = 128;
+  update();
+  status.textContent = '已恢复默认字体参数';
+});
+
 document.querySelector('#random-button').addEventListener('click', () => {
   controls.weight.value = Math.round((100 + Math.random() * 800) / 10) * 10;
   controls.width.value = Math.round(50 + Math.random() * 150);
